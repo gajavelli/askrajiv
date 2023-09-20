@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./cropped-if-32x32.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.efb7d96b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.2dcdb534.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c323f892.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.8878996c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.6aa082ef.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_lhxpha = {
+						assets: "/askrajiv",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.efb7d96b.js"),
+						import("./_app/immutable/entry/app.6aa082ef.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
